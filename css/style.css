@@ -1,0 +1,870 @@
+@charset "UTF-8";
+/* Settings */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1285px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Variables */
+/* Modification */
+.section_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  color: #121214;
+  text-align: center;
+}
+
+.services_title {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.img_left {
+  padding-left: 2px;
+}
+
+.img_right {
+  padding-right: 10px;
+}
+
+.question_active-element {
+  display: block;
+}
+
+/* Main */
+.main {
+  background-image: url("../img/moto-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Scroll */
+.scroll {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.scroll__item {
+  margin-bottom: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.scroll__item:first-child {
+  background-color: #037E8C;
+}
+
+/* Header */
+.header__inner {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__list-item {
+  margin-left: 50px;
+}
+
+.header__list-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104.7%;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+.header__list-link:hover {
+  color: #037E8C;
+}
+
+.header__phone-link {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 104.7%;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.header__phone-link::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-phone.svg");
+  width: 17px;
+  height: 17px;
+  top: 2px;
+  left: 0;
+}
+
+.header__phone-btn {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 13px 28px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 9px;
+  transition: all .5s;
+}
+
+.header__phone-btn:hover {
+  background-color: rgba(190, 190, 190, 0.4);
+}
+
+/* Main bottom */
+.main__inner {
+  padding-top: 110px;
+  padding-bottom: 190px;
+}
+
+.main__inner-title {
+  font-weight: 800;
+  font-size: 70px;
+  width: 595px;
+  line-height: 125.5%;
+  letter-spacing: 0.045em;
+  color: #fff;
+}
+
+.main__inner-text {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 108.7%;
+  color: #fff;
+}
+
+.main__inner-btn {
+  margin-top: 80px;
+  position: relative;
+  padding: 19px 75px 19px 20px;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #037E8C;
+  transition: all .5s;
+}
+
+.main__inner-btn::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-line.svg");
+  background-repeat: no-repeat;
+  padding-right: 15px;
+  width: 31px;
+  height: 31px;
+  top: 14px;
+  right: 0;
+  transition: all .5s;
+}
+
+.main__inner-btn:hover {
+  background-color: #01626d;
+}
+
+.main__inner-btn:hover::before {
+  right: -5px;
+}
+
+.main__bottom-inner {
+  padding: 47px 0 27px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__bottom-item-title {
+  margin: 20px 0 30px 0;
+}
+
+.main__bottom-item-text {
+  width: 296px;
+}
+
+/* Route */
+.route {
+  padding: 57px 0 1px 0;
+  background-image: url("../img/moto-route-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.route__inner {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 154px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.route__inner-info {
+  position: relative;
+  padding-left: 110px;
+  max-width: 627px;
+}
+
+.route__inner-info::before {
+  content: '';
+  position: absolute;
+  width: 81px;
+  height: 4px;
+  background-color: #037E8C;
+  left: 0;
+  top: 18px;
+}
+
+.route__inner-info__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 108.7%;
+}
+
+.route__inner-info__span {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 108.7%;
+}
+
+.route__inner-info__span::after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-rub.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 18px;
+  right: 0;
+  top: 13px;
+}
+
+.route__inner-info__list {
+  margin-top: 32px;
+}
+
+.route__inner-info-item {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 108.7%;
+  text-transform: uppercase;
+}
+
+.route__inner-info-item span {
+  color: #121214;
+  font-weight: bold;
+}
+
+.route__inner-info-item img {
+  margin-top: 10px;
+}
+
+.route__inner-info__el {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.route__inner-info__el::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-marsh.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  top: -3px;
+}
+
+.route__inner-info__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.route__inner-info__btns {
+  margin-top: 45px;
+}
+
+.route__inner-info__btn {
+  margin-left: 15px;
+  padding: 14px 30px;
+  background-color: #037E8C;
+  color: #fff;
+  border-radius: 9px;
+  transition: all .5s;
+}
+
+.route__inner-info__btn:hover {
+  background-color: #01626d;
+}
+
+.route__inner-info__btn-more {
+  padding: 14px 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #037E8C;
+  border: 2px solid #037E8C;
+  border-radius: 9px;
+}
+
+.route__inner-img {
+  margin-bottom: 155px;
+  width: 363px;
+}
+
+/* Swiper */
+.swiper {
+  margin-left: 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 413px;
+  height: 413px;
+  text-align: center;
+}
+
+.swiper-slide-next {
+  margin-right: 0;
+}
+
+.swiper-slide img {
+  cursor: grab;
+  display: block;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Start */
+.start {
+  padding: 80px 94px;
+  text-align: center;
+  background-image: url("../img/moto-start-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.start__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.start__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.start__btn {
+  display: inline-block;
+  margin-top: 43px;
+  padding: 14px 43px;
+  background-color: #037E8C;
+  color: #fff;
+  border-radius: 9px;
+  transition: all .5s;
+}
+
+.start__btn:hover {
+  background-color: #01626d;
+}
+
+/* Photo */
+.photo {
+  padding: 60px 0 90px 0;
+}
+
+.photo__slider {
+  margin-top: 43px;
+}
+
+/* Video */
+.video {
+  padding: 82px 0 82px 0;
+  background-image: url("../img/moto-video-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.video__item {
+  position: relative;
+  text-align: center;
+}
+
+.video__item::before {
+  content: 'Название видео';
+  position: absolute;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+  left: 135px;
+  top: 20px;
+}
+
+.video__item::after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-video-play.svg");
+  background-repeat: no-repeat;
+  width: 88px;
+  height: 88px;
+  left: 51%;
+  transform: translateX(-50%);
+  top: 39%;
+  cursor: pointer;
+}
+
+/* Team */
+.team {
+  position: relative;
+  padding: 64px 0 64px 0;
+}
+
+.team__inner {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__inner-item {
+  background-color: #F4F4F4;
+  border-radius: 9px;
+}
+
+.team__inner-item img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.team__inner-info {
+  padding: 17px 26px;
+}
+
+.team__inner-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #037E8C;
+}
+
+.team__inner-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.team::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-team-el2.png");
+}
+
+/* Services */
+.services {
+  padding: 50px 0 82px 0;
+  background-image: url("../img/moto-services-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.services__inner {
+  padding-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__inner-item {
+  margin-bottom: 30px;
+  padding-top: 5px;
+  width: 413px;
+  background-color: #fff;
+  border-radius: 9px;
+}
+
+.services__inner-text {
+  position: relative;
+  padding-left: 60px;
+  font-weight: 400;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.services__inner-text::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/moto-services.svg");
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  margin-left: 10px;
+}
+
+/* Special */
+.special {
+  padding: 64px 0 75px 0;
+}
+
+.special__inner {
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.special__inner-item {
+  background-image: url("../img/moto-special-bg.png");
+  width: 628px;
+  display: flex;
+  border-radius: 9px;
+}
+
+.special__inner-item img {
+  border-radius: 9px;
+}
+
+.special__inner-info {
+  padding: 26px 0 0 30px;
+}
+
+.special__inner-title {
+  width: 247px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  color: #037E8C;
+}
+
+.special__inner-title span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 139%;
+}
+
+.special__inner-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.special__inner-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 45px;
+  border-radius: 9px;
+  border: 2px solid #037E8C;
+  color: #037E8C;
+}
+
+/* Gift */
+.gift {
+  padding: 50px 90px;
+  background-image: url("../img/moto-gift-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.gift__text {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 558px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #037E8C;
+}
+
+.gift__inner {
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gift__inner-text {
+  width: 524px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 172.5%;
+}
+
+.gift__inner-btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 14px 23px;
+  border: 2px solid #037E8C;
+  color: #037E8C;
+  border-radius: 9px;
+}
+
+/* Question */
+.question {
+  padding: 70px 0 85px 0;
+}
+
+.question__inner {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.question__inner-info {
+  width: 378px;
+  text-align: center;
+}
+
+.question__inner-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.question__inner-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.question__inner-btn {
+  display: inline-block;
+  margin-top: 45px;
+  padding: 13px 33px;
+  background-color: #037E8C;
+  border-radius: 9px;
+  color: #fff;
+  transition: all .5s;
+}
+
+.question__inner-btn:hover {
+  background-color: #01626d;
+}
+
+.question__el {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid #848484;
+  padding: 16px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  width: 600px;
+  transition: all .5s;
+}
+
+.question__el::after {
+  content: '';
+  background-image: url("../img/moto-question-line.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  transition: all .5s;
+}
+
+.question__el:hover {
+  border-color: #037E8C;
+}
+
+.question__el:hover::after {
+  transform: rotate(-90deg);
+}
+
+.question__el-text {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: none;
+}
+
+/* More */
+.more {
+  padding: 85px 0 109px 0;
+}
+
+.more__inner {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.more__inner-item {
+  margin-bottom: 27px;
+  border-radius: 9px;
+  background-color: #F4F4F4;
+}
+
+.more__inner-item img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.more__inner-title {
+  width: 189px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #037E8C;
+}
+
+/* Contacts */
+.contacts {
+  padding: 109px 0 75px 0;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__inner-left {
+  padding-top: 15px;
+  border-top: 3px solid #037E8C;
+}
+
+.contacts__inner-left__text {
+  padding-bottom: 35px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140.4%;
+}
+
+.contacts__inner-left-title {
+  padding-top: 60px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 151.19%;
+}
+
+.contacts__inner-left__link {
+  margin-top: 10px;
+}
+
+.contacts__inner-left__link + .contacts__inner-left__link {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.contacts__inner-info {
+  width: 510px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts__inner-info__item {
+  margin-top: 25px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__inner-info__item img {
+  margin-right: 15px;
+}
+
+/* Footer */
+.footer {
+  padding: 75px 0 20px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #121214;
+  border-bottom: 1px solid #121214;
+}
+
+.footer__content-list {
+  display: flex;
+}
+
+.footer__content-item {
+  margin-right: 60px;
+}
+
+.footer__content-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104.7%;
+  text-transform: uppercase;
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
